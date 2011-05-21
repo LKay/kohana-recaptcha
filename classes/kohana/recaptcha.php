@@ -100,6 +100,7 @@ class Kohana_reCaptcha {
 	 * @param   string   reCaptcha challenge field
 	 * @return  boolean
 	 * @uses    Arr::get
+	 * @uses    Request::$client_ip
 	 */
 	public static function check($response = NULL, $challenge = NULL)
 	{
